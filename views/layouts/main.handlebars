@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101116">
+  <title>{{title}} | LumeTV</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="LumeTV — página inicial"><img src="/logo.svg" alt="LumeTV"></a>
+    {{#if currentUser}}
+      <nav class="nav-auth" aria-label="Navegação principal">
+        <a href="/catalog">Catálogo</a>
+        <span class="welcome">Olá, {{currentUser.name}}</span>
+        <form action="/logout" method="post">
+          <button class="button button--ghost button--small" type="submit">Sair</button>
+        </form>
+      </nav>
+    {{else}}
+      <nav class="nav-auth" aria-label="Acesso à conta">
+        <a href="/login">Entrar</a>
+        <a class="button button--small" href="/register">Criar conta</a>
+      </nav>
+    {{/if}}
+  </header>
+  <main>
+    {{{body}}}
+  </main>
+  <footer class="footer">LumeTV · Seu próximo filme começa aqui.</footer>
+</body>
+</html>
+
+

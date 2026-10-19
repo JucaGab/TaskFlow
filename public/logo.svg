@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 324 88" role="img" aria-labelledby="title desc">
+  <title id="title">LumeTV</title>
+  <desc id="desc">Ícone minimalista de reprodução ao lado do nome LumeTV.</desc>
+  <rect x="4" y="8" width="72" height="72" rx="22" fill="#1B1D26" stroke="#9B6DFF" stroke-width="3"/>
+  <circle cx="40" cy="44" r="21" fill="#FFC857"/>
+  <path d="M36 32.5 54 44 36 55.5z" fill="#101116"/>
+  <text x="96" y="58" fill="#F5F3FA" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="48" font-weight="700" letter-spacing="-2">Lume</text>
+  <text x="207" y="58" fill="#9B6DFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="48" font-weight="700" letter-spacing="-2">TV</text>
+</svg>

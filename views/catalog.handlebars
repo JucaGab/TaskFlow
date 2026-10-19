@@ -1,0 +1,34 @@
+<section class="hero">
+  <div class="hero-content">
+    <p class="eyebrow">UM UNIVERSO DE HISTÓRIAS</p>
+    <h1>Olá, {{firstName}}.<br>O que vamos assistir?</h1>
+    <p class="hero-copy">Explore uma seleção de filmes e séries para sua próxima sessão.</p>
+    <a class="button" href="#titulos">Explorar catálogo <span aria-hidden="true">↓</span></a>
+  </div>
+  <div class="hero-orb" aria-hidden="true"></div>
+</section>
+<section class="catalog-section" id="titulos">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">SELECIONADOS PARA VOCÊ</p>
+      <h2>Filmes e séries</h2>
+    </div>
+    <span class="count">{{catalog.length}} títulos</span>
+  </div>
+  <div class="catalog-grid">
+    {{#each catalog}}
+      <article class="movie-card">
+        <div class="poster {{poster}}" role="img" aria-label="Capa ilustrativa de {{title}}">
+          <span class="poster-mark" aria-hidden="true">{{initials}}</span>
+          <span class="poster-title">{{title}}</span>
+          <span class="badge">{{badge}}</span>
+        </div>
+        <div class="movie-info">
+          <div class="movie-title-row"><h3>{{title}}</h3><span>{{year}}</span></div>
+          <p class="genre">{{genre}}</p>
+          <p class="synopsis">{{synopsis}}</p>
+        </div>
+      </article>
+    {{/each}}
+  </div>
+</section>
